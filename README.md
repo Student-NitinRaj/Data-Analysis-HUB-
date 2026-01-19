@@ -75,286 +75,226 @@ This project is open-source. You are free to use, modify, or build upon it for e
 ---
 
 9.) Project Microsoft Powerbi link:- https://app.powerbi.com/groups/me/reports/760e8314-811a-4545-a0ca-b14f5677d466/aac64ab21b897185cb20?experience=power-bi
-🛒 Customer Purchasing Behaviour Analysis 
-📊 Industry-Standard End-to-End Data Analytics Portfolio Project
-🔍 Project Overview
+# 🛒 Customer Purchasing Behaviour Analysis
 
-This project is a complete end-to-end data analytics solution built to solve real business problems faced by a retail company.
+End-to-end data analytics project built using Python, PostgreSQL, SQL, Power BI, and Excel to solve real business problems and deliver actionable insights.
 
-The analysis covers the entire analytics lifecycle — from understanding the business problem to delivering insights through an interactive Power BI dashboard and publishing the project on GitHub.
+---
 
-The project uses Python, PostgreSQL, SQL, Excel, and Power BI, following workflows used by professional data analysts in real companies.
+📌 Project Summary
 
-🏭 Industry-Standard End-to-End Analytics Process
-01. Business Problem Understanding
+This project analyzes customer purchasing behaviour for a retail business to understand buying patterns, product performance, customer loyalty, and revenue drivers.
+
+The complete workflow follows an industry-standard analytics pipeline used in real companies — from raw data to executive-level dashboard reporting.
+
+---
+
+🔄 End-to-End Analytics Process
+
+```
+Business Problem Definition
         ↓
-02. Data Modelling & EDA in Python
+Data Cleaning & EDA (Python)
         ↓
-03. Data Analysis using SQL (PostgreSQL)
+Data Modelling & Feature Engineering
         ↓
-04. Interactive Dashboard using Power BI
+Load Data into PostgreSQL
         ↓
-05. Business Report & Insights
+SQL-Based Business Analysis
         ↓
-06. Presentation using Gamma AI
+Interactive Dashboard (Power BI)
         ↓
-07. GitHub Repository & Documentation
+Business Insights & Report
+        ↓
+Presentation (Gamma AI)
+        ↓
+GitHub Portfolio Deployment
+```
 
-✅ Step-by-Step Project Workflow
-01. Business Problem Statement
+---
 
-The company wanted to understand:
+🏢 Business Objective
 
-Customer purchasing behavior
+The company wanted to:
 
-Product category performance
+• Understand customer purchasing behaviour  
+• Identify high-value customers  
+• Measure subscription effectiveness  
+• Analyze discount dependency  
+• Evaluate product and category performance  
+• Improve retention and marketing strategy  
 
-Subscription effectiveness
+---
 
-Discount dependency
+📊 Dataset Information
 
-Revenue contribution by age group
+• Records: 3,900 transactions  
+• Features: 18 columns  
+• Source: Excel retail dataset  
 
-Repeat buyer patterns
+Key attributes include customer demographics, purchase details, discounts, shipping type, ratings, and subscription status.
 
-The goal was to improve:
+---
 
-Revenue growth
+🧹 Data Preparation (Python)
 
-Customer retention
+• Imported Excel data using Pandas  
+• Cleaned missing review ratings  
+• Standardized column naming  
+• Created age-group buckets  
+• Engineered customer segments  
+• Removed redundant features  
+• Prepared analytics-ready dataset  
 
-Marketing targeting
+---
 
-Subscription conversion
+🗄️ Database Layer
 
-02. Data Modelling & EDA in Python
+• PostgreSQL used as analytical database  
+• Python connected using SQLAlchemy  
+• Clean data loaded into relational tables  
+• SQL queries executed on production-style schema  
 
-Tools: Python, Pandas, NumPy
+---
 
-Performed tasks:
+🧮 SQL Analysis
 
-Imported Excel dataset into Python
+Core SQL techniques applied:
 
-Data cleaning & preprocessing
+• CTEs  
+• Window functions  
+• CASE statements  
+• Subqueries  
+• Aggregations  
+• Ranking logic  
 
-Missing value treatment (review ratings)
+Business analysis performed:
 
-Column standardization (snake_case)
+• Revenue by gender  
+• High-spending discount users  
+• Top-rated products  
+• Discount-dependent items  
+• Subscriber vs non-subscriber analysis  
+• Shipping type comparison  
+• Customer segmentation  
+• Top 3 products per category  
+• Repeat buyers vs subscription behavior  
+• Revenue contribution by age group  
 
-Feature engineering:
+---
 
-Age groups
+📈 Power BI Dashboard
 
-Purchase frequency
+Interactive dashboard connected directly to PostgreSQL.
 
-Customer segments
+Key metrics displayed:
 
-Removed redundant columns
+• Total customers  
+• Average purchase amount  
+• Average review rating  
 
-Prepared clean analytical dataset
+Dashboard insights:
 
-03. Load Data into SQL Database
+• Sales by category  
+• Revenue by category  
+• Subscription distribution  
+• Revenue by age group  
+• Sales by age group  
 
-Database: PostgreSQL
+Interactive filters:
 
-Connected Python to PostgreSQL using SQLAlchemy
+• Gender  
+• Category  
+• Subscription status  
+• Shipping type  
 
-Loaded cleaned dataset into SQL tables
+---
 
-Created structured schema for analysis
+🔍 Key Insights
 
-This step simulates a real data warehouse environment.
+• Non-subscribers generate higher revenue volume  
+• Subscribers show stronger repeat purchasing behavior  
+• Footwear and clothing drive the majority of sales  
+• Middle-aged and young adult customers contribute the most revenue  
+• Discounts increase volume but impact profitability  
+• Frequent buyers show higher subscription likelihood  
 
-04. Data Analysis in SQL
-
-SQL Concepts Used:
-
-JOINs
-
-CTEs
-
-Window functions
-
-Aggregations
-
-Subqueries
-
-CASE statements
-
-Business Questions Answered Using SQL
-
-Revenue by gender
-
-High-spending discount users
-
-Top 5 highest-rated products
-
-Discount-dependent products
-
-Subscribers vs non-subscribers analysis
-
-Shipping type comparison
-
-Customer segmentation (New, Returning, Loyal)
-
-Top 3 products per category
-
-Repeat buyers vs subscription behavior
-
-Revenue contribution by age group
-
-05. Interactive Dashboard using Power BI
-
-Power BI was connected directly to PostgreSQL.
-
-Dashboard KPIs:
-
-Total Customers
-
-Average Purchase Amount
-
-Average Review Rating
-
-Visual Analysis:
-
-Subscription status distribution
-
-Revenue by category
-
-Sales by category
-
-Revenue by age group
-
-Sales by age group
-
-Interactive Filters:
-
-Gender
-
-Category
-
-Subscription status
-
-Shipping type
-
-This dashboard allows real-time business decision making.
-
-06. Project Report & Insights
-
-A complete analytical report was created including:
-
-Problem statement
-
-Dataset overview
-
-SQL query outputs
-
-Visual insights
-
-Key findings
-
-Business recommendations
-
-07. Presentation using Gamma AI
-
-Insights were converted into a professional business presentation covering:
-
-Problem → Analysis → Insight → Recommendation
-
-Executive-level storytelling
-
-Clean visuals for stakeholders
-
-08. GitHub Repository
-
-All project assets were uploaded to GitHub:
-
-Python notebooks
-
-SQL queries
-
-Power BI dashboard
-
-Dataset
-
-Dashboard screenshots
-
-Final report
-
-This makes the project fully portfolio-ready.
-
-🧰 Tools & Technologies
-Technology	Usage
-Excel	Raw dataset
-Python	Data cleaning & feature engineering
-Pandas	EDA & transformations
-PostgreSQL	Data warehouse
-SQL	Business analysis
-Power BI	Dashboard & visualization
-Gamma AI	Presentation
-GitHub	Project version control
-📈 Key Business Insights
-
-Non-subscribers generate higher revenue but lower loyalty
-
-Subscribers show strong repeat purchase behavior
-
-Footwear and Clothing are top-performing categories
-
-Middle-aged and Young Adult customers contribute maximum revenue
-
-Discount-heavy products increase sales but impact margins
-
-Customers with more than 5 purchases are more likely to subscribe
+---
 
 💡 Business Recommendations
 
-Improve subscription offers for repeat buyers
+• Strengthen subscription benefit strategy  
+• Introduce loyalty programs for repeat buyers  
+• Optimize discount policies to protect margins  
+• Focus campaigns on high-revenue age groups  
+• Promote top-rated and best-selling products  
+• Upsell express shipping to premium customers  
 
-Introduce loyalty programs for high-frequency customers
+---
 
-Optimize discount strategy for margin control
+🧰 Tools Used
 
-Focus marketing on high-revenue age groups
+• Excel — raw data source  
+• Python — data cleaning and EDA  
+• Pandas — feature engineering  
+• PostgreSQL — analytical database  
+• SQL — business analysis  
+• Power BI — dashboard and visualization  
+• Gamma AI — business presentation  
+• GitHub — project version control  
 
-Promote best-selling and top-rated products
-
-Target express shipping customers with premium offers
+---
 
 📁 Repository Structure
+
+```
+customer-purchasing-behaviour-analysis/
+│
 ├── data/
 │   └── customer_behavior.xlsx
+│
 ├── python/
 │   └── data_cleaning_eda.ipynb
+│
 ├── sql/
 │   └── business_queries.sql
+│
 ├── powerbi/
-│   └── customer_behavior_dashboard.pbix
+│   └── customer_dashboard.pbix
+│
 ├── presentation/
-│   └── gamma_ai_presentation.pdf
+│   └── project_report.pdf
+│
 ├── images/
 │   └── dashboard_preview.png
+│
 └── README.md
+```
 
-🎯 Project Highlights
+---
 
-✔ Industry-standard end-to-end workflow
-✔ Real SQL business problems
-✔ PostgreSQL database integration
-✔ Power BI professional dashboard
-✔ Strong business storytelling
-✔ Recruiter-ready portfolio project
+⭐ Project Highlights
 
-👨‍💻 Author
+• Complete end-to-end analytics workflow  
+• Real SQL business problem solving  
+• PostgreSQL integration with Python  
+• Professional Power BI dashboard  
+• Strong business storytelling  
+• Portfolio-ready industry project  
 
-Vishwajeet Gupta
-📊 Data Analyst | Data Science Enthusiast
+---
 
-Skills:
+👤 Author
+
+Vishwajeet Gupta  
+Data Analyst | Data Science Enthusiast  
+
+Skills:  
 SQL • PostgreSQL • Power BI • Python • Excel • Data Analytics
 
+---
 
-## 👤 Author
+👤 Author
 
 **Nitin Raj**  
 *Data Analyst | Power BI Enthusiast | EV Market Researcher*  
