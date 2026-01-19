@@ -284,11 +284,6 @@ customer-purchasing-behaviour-analysis/
 
 ---
 
-👤 Author
-
-Vishwajeet Gupta  
-Data Analyst | Data Science Enthusiast  
-
 Skills:  
 SQL • PostgreSQL • Power BI • Python • Excel • Data Analytics
 
